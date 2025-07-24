@@ -1,0 +1,129 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #181a1b;
+    color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #23272b;
+    padding: 2em 1.5em;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+}
+h1 {
+    text-align: center;
+    color: #90caf9;
+    margin-bottom: 1.5em;
+}
+.opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-top: 2em;
+}
+.boton, button {
+    display: inline-block;
+    background: linear-gradient(90deg, #1976d2 0%, #0d47a1 100%);
+    color: #fff;
+    padding: 0.9em 1.7em;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.15);
+}
+.boton:hover, button:hover {
+    background: linear-gradient(90deg, #1565c0 0%, #1976d2 100%);
+    box-shadow: 0 4px 16px rgba(25, 118, 210, 0.25);
+}
+form label {
+    display: block;
+    margin-top: 1.2em;
+    color: #b0bec5;
+    font-size: 1em;
+}
+form input, form textarea, form select {
+    width: 100%;
+    padding: 0.7em;
+    margin-top: 0.3em;
+    border: 1px solid #374151;
+    border-radius: 5px;
+    font-size: 1em;
+    background: #23272b;
+    color: #f1f1f1;
+    transition: border 0.2s;
+}
+form input:focus, form textarea:focus, form select:focus {
+    border: 1.5px solid #90caf9;
+    outline: none;
+}
+form textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2em;
+    background: #23272b;
+    border-radius: 8px;
+    overflow: hidden;
+}
+table th, table td {
+    border: 1px solid #374151;
+    padding: 0.85em 0.6em;
+    text-align: left;
+}
+table th {
+    background: #1976d2;
+    color: #fff;
+    font-weight: 600;
+}
+table tr:nth-child(even) {
+    background: #20232a;
+}
+table tr:nth-child(odd) {
+    background: #23272b;
+}
+#mensaje {
+    margin-top: 1.2em;
+    color: #66bb6a;
+    text-align: center;
+    font-weight: 500;
+}
+@media (max-width: 700px) {
+    .container {
+        max-width: 98vw;
+        padding: 1.2em 0.5em;
+    }
+    table th, table td {
+        font-size: 0.98em;
+        padding: 0.6em 0.3em;
+    }
+    h1 {
+        font-size: 1.3em;
+    }
+}
+@media (max-width: 480px) {
+    .container {
+        padding: 0.7em 0.1em;
+    }
+    .boton, button {
+        font-size: 1em;
+        padding: 0.7em 1em;
+    }
+    form label {
+        font-size: 0.98em;
+    }
+    h1 {
+        font-size: 1.1em;
+    }
+} 

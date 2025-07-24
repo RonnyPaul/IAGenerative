@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Actividades IA</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fa-solid fa-robot"></i> Generador de actividades en tiempo real usando IA</h1>
+        <form id="form-generador">
+            <label for="prompt">Describe la actividad o palabra clave:</label>
+            <input type="text" id="prompt" name="prompt" required>
+            <button type="button" id="generar-btn"><i class="fa-solid fa-wand-magic-sparkles"></i> Generar con IA</button>
+            <label for="descripcion">Descripción generada:</label>
+            <textarea id="descripcion" name="descripcion" required></textarea>
+            <label for="fecha">Fecha de la actividad:</label>
+            <input type="date" id="fecha" name="fecha" required>
+            <label for="ninio">Selecciona el niño:</label>
+            <select id="ninio" name="ninio" required></select>
+            <button type="submit"><i class="fa-solid fa-floppy-disk"></i> Guardar actividad</button>
+        </form>
+        <div id="mensaje"></div>
+        <a href="index.html" class="boton"><i class="fa-solid fa-arrow-left"></i> Volver al panel principal</a>
+    </div>
+    <script src="js/generador.js"></script>
+</body>
+</html> 
